@@ -1,4 +1,4 @@
-from rest_framework import viewsets, permissions
+from rest_framework import viewsets, permissions, filters
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.authtoken.admin import User
 from rest_framework.response import Response
@@ -14,6 +14,8 @@ class TaskViewSet(viewsets.ModelViewSet):
                           IsOwnerOrReadOnly]
     queryset = Task.objects.all()
     serializer_class = TaskSerializer
+    search_fields = ['title']
+    filter_backends = [filters.SearchFilter]
 
     def update(self, request, *args, **kwargs):
         task = self.get_object()
@@ -34,4 +36,3 @@ class TaskViewSet(viewsets.ModelViewSet):
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all().order_by('-date_joined')
     serializer_class = UserSerializer
-

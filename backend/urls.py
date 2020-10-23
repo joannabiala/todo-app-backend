@@ -9,7 +9,3 @@ urlpatterns = [
     path('auth/', views.obtain_auth_token)
 ]
 
-
-# urlpatterns += [
-#     path('auth/', views.obtain_auth_token)
-# ]
