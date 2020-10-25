@@ -14,14 +14,15 @@ class ListSerializer(serializers.ModelSerializer):
     taski = TaskSerializer(many=True, required=False)
 
     class Meta:
-        owner = serializers.ReadOnlyField(source='owner.username')
+        #owner = serializers.ReadOnlyField(source='owner.username')
         model = List
-        fields = ['id', 'list_name', 'taski', 'owner']
+        fields = ['id', 'list_name', 'taski']
         read_only_fields = ['taski']
 
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
-    list = serializers.StringRelatedField(many=True)
+    #list = serializers.StringRelatedField(many=True)
+    list = serializers.PrimaryKeyRelatedField(many=True, queryset=List.objects.all())
 
     class Meta:
         model = User
