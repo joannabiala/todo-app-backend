@@ -1,3 +1,4 @@
+import django_heroku
 """
 Django settings for backend project.
 
@@ -24,7 +25,7 @@ SECRET_KEY = 'f6+anf-##))-7zu!t-(b-mu-%x))chswc1!=gtbcqf!ndlmfm+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -136,5 +137,7 @@ REST_FRAMEWORK = {
 CORS_ORIGIN_ALLOW_ALL = True # If this is used then `CORS_ORIGIN_WHITELIST` will not have any effect
 CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_REGEX_WHITELIST = [
-    'http://localhost:3000',
+    '*'
 ]
+
+django_heroku.settings(locals())

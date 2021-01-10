@@ -8,13 +8,13 @@ edit, delete and mark off already completed tasks.
 These instructions will get you a copy of the project 
 up and running on your local machine for development and testing purposes.
 
+Download or clone the repository.
+
 #### Prerequisites
 Create a virtual environment and install dependencies.
 #### `mkvirtualenv myenv`
 #### `pip install -r requirements.txt`
-Download or clone the repository and run
-#### `npm install` 
-in the downloaded directory, then run
+
 #### Run the development server to verify everything is working.
 
 #### `python ./manage.py runserver`
