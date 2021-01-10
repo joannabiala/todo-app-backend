@@ -24,7 +24,7 @@ or
 
 #### Or just try online demo
 
-* [ToDoo!](http://www.dropwizard.io/1.0.2/docs/) - Link to Demo deployed on Heroku.
+* [ToDoo!](https://todo-app-222.herokuapp.com/) - Link to Demo deployed on Heroku.
 
 ###Built with
 * Python
