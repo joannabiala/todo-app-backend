@@ -24,7 +24,7 @@ or
 
 #### Or just try online demo
 
-* [ToDoo!](http://52.29.228.97:3000) - Link to Demo deployed on Heroku.
+* [ToDoo!](http://52.29.228.97:3000) - Link to deployed demo.
 
 ### Built with
 * Python
