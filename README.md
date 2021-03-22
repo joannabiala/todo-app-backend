@@ -24,9 +24,9 @@ or
 
 #### Or just try online demo
 
-* [ToDoo!](https://todo-app-222.herokuapp.com/) - Link to Demo deployed on Heroku.
+* [ToDoo!](http://52.29.228.97:3000) - Link to Demo deployed on Heroku.
 
-###Built with
+### Built with
 * Python
 * Django Rest Framework
 
